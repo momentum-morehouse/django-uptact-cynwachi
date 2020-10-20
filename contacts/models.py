@@ -22,8 +22,8 @@ class Contact(models.Model):
     state = USStateField(null=True, blank=True)
     zip_code = USZipCodeField(null=True, blank=True)
     
-    class Note(models.Model):
-        text = models.TextField(max_length=300)
-        datetime = models.models.DateTimeField(auto_now_add=False)
+class Note(models.Model):
+    text = models.TextField(max_length=300)
+    datetime = models.DateTimeField(auto_now_add=False)
         
     
