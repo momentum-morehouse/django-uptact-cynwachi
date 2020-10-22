@@ -27,8 +27,11 @@ class Contact(models.Model):
     
 class Note(models.Model):
     text = models.TextField(max_length=300)
-    datetime = models.DateTimeField(auto_now_add=False)
-    contact =models.ForeignKey(Contact, on_delete=models.CASCADE,null=True, related_name="notes")
-    note =models.DateTimeField(null=True,blank=True)
+    date_time = models.DateTimeField(auto_now_add=False)
+    contact = models.ForeignKey(to="Contact", on_delete=models.CASCADE, related_name="notes")
+    note = models.DateTimeField(null=True,blank=True)
+    
+    def __str__(self):
+        return self.text
         
     
