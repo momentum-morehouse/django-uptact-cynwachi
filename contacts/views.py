@@ -59,5 +59,5 @@ def contact_detail(request, pk):
     contact = get_object_or_404(Contact, pk=pk)
     if request.method =='GET':
         form = NoteForm()
-    return render(request, "contacts/contact_detail.html", 
+    return render(request, "contacts/contact_detail.html", #3part thing leading to the next step
             {"contact": contact})

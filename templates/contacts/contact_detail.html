@@ -2,17 +2,6 @@
 {% block content %}
 {{ contact.name }}
 
-{}
-
-
-{}
-
-
-{}
-
-
-{% endif %}
-
 <h1> Notes </h1>
 
 {% for note in contact.notes.all %}
@@ -25,3 +14,5 @@
 <a class="red" href={% url 'delete_contact' pk=contact.pk %}
 </p>
 {% endblock %}
+
+
