@@ -12,6 +12,7 @@ django-debug-toolbar = "*"
 werkzeug = "*"
 django-environ = "*"
 django-localflavor = "*"
+psycopg2-binary = "*"
 
 [requires]
 python_version = "3.8"

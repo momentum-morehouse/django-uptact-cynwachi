@@ -62,7 +62,7 @@ With this assignment, we are going to explore forms.
 Previously, you added a `Note` model, but had no ability to create new notes through your Django application. Now do the following steps:
 
 1. Add a new form called `NoteForm`. This form should let you edit only one field, the text of the note.
-2. Add a new view to accept this form via `POST` request and add a new note to a specific user. The user will be specified via the URL, which should be `contacts/<int:pk>/notes/`.
+2. Add a new view to accept this form via `POST` request and add a new note to a specific contact. The contact will be specified via the URL, which should be `contacts/<int:pk>/notes/`.
 3. On the individual contact view that you previously added, add a form to create new notes. When the note is created, redirect back to the contact view.
 
 Test this by adding some notes to individual contacts.
